@@ -11,7 +11,6 @@ import { Button } from '../../components/Button';
 
 import { Container, AreaAulas, AreaPerfil, Sair, ButSair, PerAreaImg, PerImg, ExpArea, ExpBarra, ExpBarraProg, ExpText, ExpAreaImgRank, ExpImgRank } from './styles';
 
-import Alongamento from '../../assets/alongamento.png';
 import { Card } from '../../components/Card';
 
 
@@ -21,10 +20,16 @@ import Rank from "../../assets/Rank2r.png";
 
 export function Profile() {
 
-    const { signOut } = useContext(AuthContext);
+    const { signOut, OpenModalAula, setVideo, setDesc,setIcon,setQnt,setNota,setNome } = useContext(AuthContext);
 
-    function ClickAula() {
-
+    function ClickAula(vid, desc,Icon,Qnt,Nota,Nome) {
+        setVideo(vid);
+        setDesc(desc);
+        setIcon(Icon);
+        setQnt(Qnt);
+        setNota(Nota);
+        setNome(Nome);
+        OpenModalAula(vid, desc,Icon,Qnt,Nota,Nome);
     }
 
     return (
@@ -57,7 +62,7 @@ export function Profile() {
 
             <AreaAulas>
                 <Card
-                    onPress={ClickAula}
+                    clickDetalhes={ClickAula}
                 />
             </AreaAulas>
         </Container>

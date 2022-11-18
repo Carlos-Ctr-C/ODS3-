@@ -5,7 +5,6 @@ import AuthProvider from './src/contexts/auth';
 import { NavigationContainer } from '@react-navigation/native';
 
 
-
 export default function App() {
   return (
 
@@ -14,6 +13,5 @@ export default function App() {
         <Routes />
       </AuthProvider>
     </NavigationContainer>
-
   );
 }

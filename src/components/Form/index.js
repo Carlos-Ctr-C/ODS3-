@@ -16,7 +16,7 @@ export function Form() {
       <Content>
       <Input
           name="nome"
-          icon="user"
+          icon="person"
           placeholder="Nome"
         />
         <Input
@@ -28,13 +28,13 @@ export function Form() {
         />
         <Input
           name="senha"
-          icon="lock"
+          icon="lock-closed-sharp"
           placeholder="Senha"
           secureTextEntry
         />
         <Input
         name="ConfSenha"
-        icon="lock"
+        icon="lock-closed-sharp"
         placeholder="Confirme sua Senha"
         secureTextEntry
       />

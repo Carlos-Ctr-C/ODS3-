@@ -21,7 +21,7 @@ export function Header({ selectedValue, onValueChange }: Props) {
         selectedValue={selectedValue}
         onValueChange={(itemValue: MonthsProps) => onValueChange(itemValue)}
         style={{
-          backgroundColor: "#045380",
+          backgroundColor: "#FFF",
           height: 60,
           flex: 1,
           marginLeft: 50

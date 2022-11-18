@@ -13,7 +13,7 @@ export const ContSearch = styled.ImageBackground`
 `;
 export const Content = styled.View`
     flex: 1;
-    background-color: #02735E;
+    background-color: #FFFFFF;
     align-items: center;
     flex-direction: row;
 `;

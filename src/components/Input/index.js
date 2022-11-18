@@ -1,4 +1,4 @@
-import { Feather } from '@expo/vector-icons';
+import { Ionicons } from '@expo/vector-icons';
 import React, { useState } from 'react';
 
 import { Container, IconContainer, InputText } from './styles';
@@ -25,7 +25,7 @@ export function Input({ icon, value, ...rest }) {
   return (
     <Container >
       <IconContainer>
-        <Feather
+        <Ionicons
           name={icon}
           size={24}
           color={(isFocused ) ? '#038C3E' : '#a6a6a8'}

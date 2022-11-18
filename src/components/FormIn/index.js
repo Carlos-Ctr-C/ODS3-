@@ -27,7 +27,7 @@ export function FormIn() {
         />
         <Input
           name="senha"
-          icon="lock"
+          icon="lock-closed-sharp"
           placeholder="Senha"
           secureTextEntry
         />

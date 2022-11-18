@@ -8,16 +8,23 @@ import CapaExercicio from '../../assets/capaExercicio2.png';
 import { Card } from '../../components/Card';
 import { AuthContext } from '../../contexts/auth';
 
+
 export function Home() {
 
-    const { OpenModal } = useContext(AuthContext);
+    const { OpenModal, OpenModalAula, setVideo, setDesc,setIcon,setQnt,setNota, setNome } = useContext(AuthContext);
 
     useEffect(()=> {
         OpenModal();
     },[])
 
-    function ClickAula() {
-        
+    function ClickAula(vid, desc,Icon,Qnt,Nota,Nome) {
+        setVideo(vid);
+        setDesc(desc);
+        setIcon(Icon);
+        setQnt(Qnt);
+        setNota(Nota);
+        setNome(Nome);
+        OpenModalAula(vid, desc,Icon,Qnt,Nota,Nome);
     }
 
     return (
@@ -32,7 +39,7 @@ export function Home() {
             </ContSearch>
             <Content>
                 <Card
-                onPress={ClickAula}
+                clickDetalhes={ClickAula}
                 />
             </Content>
         </Container>

@@ -4,7 +4,7 @@ import { FlatList } from "react-native";
 
 import List from '../List';
 
-export function Card() {
+export function Card({ clickDetalhes }) {
 
     const [list, useList] = useState(List)
 
@@ -14,12 +14,16 @@ export function Card() {
                 data={list}
                 keyExtractor={(item) => item.id}
                 numColumns={2}
-                renderItem={({ item }) =>
-                    <Container>
-                        <Image
-                            source={item.Img}
-                        />
-                    </Container>
+                renderItem={({ item }) => {
+                    return (
+                        <Container onPress={() => clickDetalhes(item.vid, item.desc,item.Icon,item.Qnt,item.Nota,item.Nome)} >
+                            <Image
+                                source={item.Img}
+                            />
+                        </Container>
+                    )
+                }
+
                 }
             />
         </D>

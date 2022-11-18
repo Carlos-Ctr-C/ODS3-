@@ -12,15 +12,9 @@ export const ExpArea = styled.View`
 `;
 
 export const ExpAreaImgRank = styled.View`
-    /* width: 70px;
-    height: 70px;
-    border-radius: 35px;
-    align-items: center;
-    background-color: #02735E; */
     flex: 1;
     justify-content: center;
     align-items: center;
-    
 `;
 
 export const ExpImgRank = styled.ImageBackground`
@@ -78,7 +72,6 @@ export const ButSair = styled.TouchableOpacity`
     background-color: #02735Edd;
     justify-content: center;
     align-items: center;
-    
 `;
 
 export const PerAreaImg = styled.View`
@@ -95,7 +88,7 @@ export const PerImg = styled.ImageBackground`
 
 export const AreaAulas = styled.View`
     flex: 6;
-    background-color: #02735E;
+    background-color: #FFF;
     align-items: center;
     flex-direction: row;
 `;

@@ -39,7 +39,7 @@ export const EXPENSES = {
         id: "6",
         label: "Guloseimas",
         value: 200,
-        color: "#713259",
+        color: "#713299",
         percent: "5%"
       }
     ],
@@ -83,7 +83,7 @@ export const EXPENSES = {
         id: "6",
         label: "Guloseimas",
         value: 180,
-        color: "#713259",
+        color: "#713299",
         percent: "5%"
       }
     ],
@@ -127,7 +127,7 @@ export const EXPENSES = {
         id: "6",
         label: "Guloseimas",
         value: 420,
-        color: "#713259",
+        color: "#713299",
         percent: "5%"
       }
     ],

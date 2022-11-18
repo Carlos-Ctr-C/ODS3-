@@ -16,7 +16,7 @@ export const Header = styled.View`
     height: 10%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background-color: darkgreen;
+    background-color: #02735E;
     border: 1px;
     border-color: #0007;
 `;
